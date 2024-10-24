@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.headertop {
+    border: solid red 1px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navleft, .navright {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+}
+
+.navleft div:nth-child(1) {
+    width: 100px;
+}
+
+.navright img {
+    width: 30px;
+    height: 30px;
+}
+.homeiconimg {
+    padding: 20px;
+}
+
+.navleft div:nth-child(2) {
+    padding: 30px 10px;
+    font-family: "Arial Black";
+    font-size: 1.4em;
+}
+
+.homeiconimg:hover {
+    opacity: 0.5;
+}
+
+.homeiconlink {
+    text-decoration: none;
+    color: navy;
+}
+
+.homeiconlink:hover {
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+.navright div {
+    width: 20%;
+    padding: 20px;
+    height: 100%;
+}
+
+.navright div:nth-child(1) {
+    margin-left: auto;
+}
+
+.navright div:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.navlinks {
+    width: 100%;
+    background-color: lightblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.links {
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    color: darkslateblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.links:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+.introimage {
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.introtitle {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 3em;
+    color: lightseagreen;
+}
+
+.bodyinfo {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+
+.cardcontainer {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: 40%;
+    height: 300px;
+    border: solid 1px lightgray;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 40%;
+}
+
+.cardtitle {
+    padding: 5px 20px;
+    font-size: 1.5em;
+    color: darkslateblue;
+    cursor: pointer;
+}
+
+.cardtitle:hover {
+    text-decoration: underline;
+}
+
+/*-- right blog column --*/
+.blogs {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+
+    width: 25%;
+    height: auto;
+
+    padding: 20px;
+
+    border: solid 1px lightgray;
+    border-radius: 20px;
+
+    background-color: white;
+}
+
+.blogs h2 {
+    font-size: 1.5em;
+    color: darkslateblue;
+}
+
+/*--footer section-- */
+.footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,39 @@
+*{box-sizing: border-box;}
+.content{
+    width: 3000px;
+    background-color: aqua;
+    padding: 20px;
+}
+/*scrollable image gallery */
+.maincontainer, .gallery-container{
+    width: 1000px;
+    margin: auto;
+}
+.maincontainer{
+    position: relative;
+    z-index: 0;
+}
+.gallerycontainer{
+    overflow-x: scroll; /*enables horizontal scroll*/
+    white-space: nowrap;/*ensure all images stay on the same line*/
+    position: relative;
+
+}
+.gallery-image{
+    display: inline-block;
+    width: 500px;
+}
+.btnright, .btnleft{
+    position: absolute;
+    top: 40%;
+    z-index: 2;
+    background-color: rgba(70, 200, 50, 0.5);
+    border: none;
+    font-size: 2em;
+}
+.btnright:hover, .btnleft:hover{
+    cursor: pointer;
+    background-color: rgba(200, 50, 72, 0.6)
+}
+.btnright{right: 1%;}
+.btnleft{left: 1%;}
