@@ -1,0 +1,48 @@
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+    
+    #countButton, button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    #countDisplay {
+        font-size: 20px;
+    }
+}
+
+/* Tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+    }
+
+    #countButton, button {
+        padding: 12px 25px;
+        font-size: 18px;
+    }
+
+    #countDisplay {
+        font-size: 22px;
+    }
+}
+
+/* Desktop (1025px and up) */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+
+    #countButton, button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+
+    #countDisplay {
+        font-size: 24px;
+    }
+}

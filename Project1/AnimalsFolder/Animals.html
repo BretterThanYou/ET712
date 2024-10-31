@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals</title>
+    <link rel="stylesheet" href="Animals.css">
+    <link rel="stylesheet" href="AnimalsResponsive.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Discover Different Animals!</h2>
+        <div class="grid">
+            <div class="animal" onclick="openModal('cat')">
+                <img src="../Main_Images/cat.png" alt="Cat">
+                <p>Cat</p>
+            </div>
+            <div class="animal" onclick="openModal('dog')">
+                <img src="../Main_Images/dog.png" alt="Dog">
+                <p>Dog</p>
+            </div>
+            <div class="animal" onclick="openModal('fish')">
+                <img src="../Main_Images/fish.png" alt="Fish">
+                <p>Fish</p>
+            </div>
+            <div class="animal" onclick="openModal('bird')">
+                <img src="../Main_Images/bird.png" alt="Bird">
+                <p>Bird</p>
+            </div>
+            <div class="animal" onclick="openModal('horse')">
+                <img src="../Main_Images/horse.png" alt="Horse">
+                <p>Horse</p>
+            </div>
+            <div class="animal" onclick="openModal('cow')">
+                <img src="../Main_Images/cow.png" alt="Cow">
+                <p>Cow</p>
+            </div>
+            <div class="animal" onclick="openModal('pig')">
+                <img src="../Main_Images/pig.png" alt="Pig">
+                <p>Pig</p>
+            </div>
+            <div class="animal" onclick="openModal('chicken')">
+                <img src="../Main_Images/chicken.png" alt="Chicken">
+                <p>Chicken</p>
+            </div>
+            <div class="animal" onclick="openModal('monkey')">
+                <img src="../Main_Images/monkey.png" alt="Monkey">
+                <p>Monkey</p>
+            </div>
+        </div>
+        <button onclick="goBack()">Back to Main Menu</button>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="animalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Animal Name</h3>
+            <img id="modalImage" src="" alt="Animal Image">
+            <p id="modalDescription">Description of the animal.</p>
+            <button id="soundButton">Play Sound</button>
+        </div>
+    </div>
+
+    <script src="Animals.js"></script>
+</body>
+</html>

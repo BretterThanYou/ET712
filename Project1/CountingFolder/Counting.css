@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffacd;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#countButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#countButton:hover {
+    background-color: #005f6a;
+}
+
+#countDisplay {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}

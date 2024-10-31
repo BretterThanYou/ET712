@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafad2;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.letter {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.letter img {
+    width: 50px;
+    height: 50px;
+}
+
+.letter button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff8c00;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.letter button:hover {
+    background-color: #e07b00;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}

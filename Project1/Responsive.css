@@ -1,0 +1,46 @@
+/* responsive.css */
+
+/* Mobile (0 - 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+    .menu button {
+        width: 100%;
+        font-size: 16px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Tablet (601px - 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    .menu button {
+        width: 220px;
+        font-size: 18px;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Desktop (993px and up) */
+@media (min-width: 993px) {
+    .container {
+        width: 70%;
+    }
+    .menu button {
+        width: 250px;
+        font-size: 20px;
+    }
+}
