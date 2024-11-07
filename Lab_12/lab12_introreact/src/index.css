@@ -6,7 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{box-sizing: border-box;}
+.subtitle{
+  background-color: aliceblue;
+  box-shadow: 2px 2px 5px lightgray;
+  padding: 1em;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
