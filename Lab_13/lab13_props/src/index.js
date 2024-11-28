@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import User from "./comments"
 // import all images
-import avataruser1 from "./images/batman"
+import avataruser1 from "./images/batman.png"
 import avataruser2 from "./images/businessman.png"
 import avataruser3 from "./images/lady.png"
 
@@ -13,8 +13,8 @@ const App = function(){
     <h1 style={{textAlign:"center"}}>Brett Hirsch</h1>
     <section className='container'>
       <User image ={avataruser1} name="Batman" date="11/12/2024" msg="I am Batman"/>
-      <User image ={avataruser2} name="Peter" date="10/31/2024" msg="I am Batman"/>
-      <User image ={avataruser1} name="Jessica" date="10/16/2024" msg="Great Job!"/>
+      <User image ={avataruser2} name="Peter" date="10/31/2024" msg="Need more rest"/>
+      <User image ={avataruser3} name="Jessica" date="10/16/2024" msg="Great Job!"/>
     </section>
     </>
   )

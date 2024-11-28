@@ -20,10 +20,18 @@ code {
   width: 200px;
   text-align:center;
   margin: 1em;
-  border-radius: 6px;
+  border-radius: 10px;
   transition: ease-in-out 100ms;
   background-color: aliceblue;
 }
+.card img {
+  max-width: 100%; /* Ensures the image doesn't exceed the card's width */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 5px; /* Optional: Adds rounded corners to the image */
+  display: block; /* Removes any inline alignment gaps */
+  margin: 0 auto; /* Centers the image inside the card */
+}
+
 .card:hover{
   box-shadow: 0px 0px 10px 1px gray;
   transform: scale(1.01);
@@ -41,5 +49,5 @@ code {
 .container{
   display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
