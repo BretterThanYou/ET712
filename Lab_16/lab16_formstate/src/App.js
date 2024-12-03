@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 function App() {
   //OPEN AND CLOSE BUTTON
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   //Function to toggle the isOpen state
   const openreadmore = function(){
@@ -28,6 +28,18 @@ function App() {
         </div>
         }
       </section>
+
+      <form>
+        <fieldset>
+          <legend>
+            <label for="username">Enter a name: </label>
+              <input type='text' id='username' placeholder='Type your name'/>
+          </legend>
+        </fieldset>
+      </form>
+
+
+
     </div>
   );
 }
