@@ -14,7 +14,7 @@ function App() {
     <h1>Brett Hirsch</h1>
       <div className='info'>
         <p><b>Cat (Felis catus)</b>, commonly referred to as the domestic pet or house cat</p>
-        <button className='readmorebtn' onClick={openreadmore}>Read more</button>
+        <button className='readmorebtn' onClick={openreadmore}>{isOpen ? "Hide" : "Read More"}</button>
       </div>
       <section>
         {
