@@ -9,6 +9,28 @@ function App() {
   const openreadmore = function(){
     setIsOpen(!isOpen)
   }
+
+  // setState for 'form'
+  const[inputs, setInput] = useState({})
+
+  // function to capture the input username
+
+  /*const capturename = function(e){
+    setName(e.target.value)
+  }*/
+
+  //function to submit the form
+  const submitform = function(e){
+    e.preventDefault()
+    alert(`Welcome to React form ${inputs.username} \n Your age is ${inputs.age}`)
+  }
+
+  // function to collect all the values in the form
+  const handlechange = function(e){
+    const name = e.target.name
+    const value = e.target.value
+    setInput(values => ({...values, [name]:value}))
+  }
   return (
     <div className="App">
     <h1>Brett Hirsch</h1>
@@ -29,17 +51,33 @@ function App() {
         }
       </section>
 
-      <form>
+      <form onSubmit={submitform}>
         <fieldset>
-          <legend>
+          <legend>User information</legend>
             <label for="username">Enter a name: </label>
-              <input type='text' id='username' placeholder='Type your name'/>
-          </legend>
+              <input 
+              type='text' 
+              id='username'
+              name='username'
+              placeholder='Type your name...'
+              value={inputs.username}
+              onChange={handlechange}
+              />
+              <label for="age">Enter an age: </label>
+              
+              <input
+               type='number'
+               name='age'
+               id='age'
+               value={inputs.age}
+               onChange={handlechange}
+              />
+          {/*Submit button*/}
+          <div>
+            <input type='submit'/>
+          </div>
         </fieldset>
       </form>
-
-
-
     </div>
   );
 }
